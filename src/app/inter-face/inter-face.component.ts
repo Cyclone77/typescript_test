@@ -10,10 +10,17 @@ export class InterFaceComponent implements OnInit {
   p1: Point = { x: 10, y: 10 } ;
   p2 = <Point>{ x: 5, y: 6 };
   p3 = {} as Point;
+  // tslint:disable-next-line:no-inferrable-types
+  isDone: boolean = false;
   constructor() { }
 
   ngOnInit() {
-
+    let myFavoriteNumber: string | number;
+    myFavoriteNumber = 'seven';
+    myFavoriteNumber = 7;
+    // tslint:disable-next-line:no-construct
+    const createdByNewBoolean: Boolean = new Boolean(1);
+    console.log(createdByNewBoolean);
     // 接口初探
     this.printLabel(this.myObj);
     const mySquare = this.createSquare({color: 'black', width: 40});

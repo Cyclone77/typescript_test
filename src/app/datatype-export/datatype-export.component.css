@@ -1,0 +1,17 @@
+.left {
+    float: left;
+    width: 200px;
+    height: 100vh;
+}
+
+.right {
+    float: left;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.rightarea {
+    height: 100%;
+    margin-left: 200px;
+    background-color: cadetblue;
+}
